@@ -1,0 +1,75 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #000;
+  --card: #fff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #fff;
+  --card: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background: var(--card);
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  background: #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin: 8px 0;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+}
